@@ -1,0 +1,13 @@
+.point-list{
+    display: inline;
+    margin-right: 5px;
+    border: solid 1px;
+}
+
+.marks{
+    margin: 3px;
+}
+
+.game{
+    margin: 10px;
+}
