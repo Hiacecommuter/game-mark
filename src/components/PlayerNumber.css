@@ -1,0 +1,63 @@
+.Buttons{
+    width: auto;
+    background: #00A86B;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    font-family: 'Playfair Display';
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.Buttons:hover{
+    background-color: #45a049;
+}
+
+.Container{
+    width: 533;
+    height: 277; 
+    position: relative;
+    
+}
+
+.InputRequest{
+    color: #00A86B;
+    font-size: 36px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.UserInput{
+    border: none; /* Remove default border */
+    border-bottom: 1px solid #0047AB; /* Add bottom border */
+    background-color: transparent; /* Make background transparent */
+    outline: none;
+    width: 185px;
+    height: 20px;
+    font-size: 24px;
+    color: #9B111E;
+}
+
+.UserInput::placeholder{
+    color: #999;
+}
+
+.WhiteBox{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50); 
+    border-radius: 15px;
+}
+
+.WhiteBox > * {
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}

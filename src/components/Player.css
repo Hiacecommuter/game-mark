@@ -1,0 +1,43 @@
+.AddButton{
+    color: white;
+    background-color: #0047AB;
+    border-radius: 25px;
+
+}
+
+.PlayerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.PlayerContainer > * {
+    margin-top: 5px;
+    margin-right: 2.5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.PlayerName{
+    border: none;
+    background: none;
+    font-size: 24px;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #00A86B;
+}
+
+.PointsInput{
+    border-radius: 25px;
+    border-color: grey;
+    padding-left: 10px;
+}
+
+.TotalPoints{
+    color: black;
+    font-size: 18px;
+    font-family: Playfair Display;
+    font-weight: 400;
+    word-wrap: break-word;
+}

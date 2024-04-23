@@ -1,0 +1,8 @@
+.PlayersContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.PlayersContainer > * {
+    width: 50%;
+}
