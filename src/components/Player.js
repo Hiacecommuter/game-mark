@@ -26,7 +26,7 @@ function Player({defaultName, onNameChange}){
                 {pointList.map((element, index) => (
                 <span className='IndividualPoints' key={index}>{element}</span>))}
             </div>
-            <input type='number' value={point} onChange={handlePointInput} placeholder='Insert points' className='PointsInput'/>
+            <input type='number' onChange={handlePointInput} placeholder='Insert points' className='PointsInput'/>
             <button className='AddButton' onClick={handleAddButton}>Add</button>
         </div>
     )
