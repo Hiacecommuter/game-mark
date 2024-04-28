@@ -3,10 +3,10 @@ import './PlayerNumber.css'
 function PlayerNumber({onIsNewChange, numberOfPlayers, onSetNumberOfPlayersChange}){
 
     const handleConfirmButton = () =>{
-        if (numberOfPlayers>0)
+        if (numberOfPlayers>0 && numberOfPlayers <9)
         {onIsNewChange(false);}
         else{
-            alert("Please enter number of players!")
+            alert("Please enter a valid number of players (1-8)!")
         }
     }
 
