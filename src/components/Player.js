@@ -4,7 +4,7 @@ import './Player.css'
 function Player({defaultName, onNameChange}){
 
     const [point, setPoint] = useState('');
-    const [totalPoints, setTotalPoints] = useState(0);
+    const [totalPoints, setTotalPoints] = useState(0.0);
     const [pointList, setPointList] = useState([]);
 
     const handlePointInput = (e) => {
@@ -16,7 +16,7 @@ function Player({defaultName, onNameChange}){
 
     const handleAddButton = () => {
         setPointList([...pointList, point]);
-        const addedPoints = parseFloat(point)
+        const addedPoints = parseFloat(point);
         setTotalPoints(totalPoints + addedPoints);
         setPoint('');
     }
@@ -24,11 +24,11 @@ function Player({defaultName, onNameChange}){
     const handleDeductButton = () => {
         let negativePoint = 0-point;
         setPointList([...pointList, negativePoint]);
-        setTotalPoints(totalPoints - point);
+        const deductedPoints = totalPoints - point;
+        const roundedPoints = parseFloat(deductedPoints.toFixed(1))
+        setTotalPoints(roundedPoints);
         setPoint('');
     }
-
-    
 
     return(
         <div className='PlayerContainer'>
