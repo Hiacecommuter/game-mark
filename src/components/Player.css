@@ -5,6 +5,13 @@
 
 }
 
+.DeductButton{
+    color: white;
+    background-color: #9b111e;
+    border-radius: 25px;
+
+}
+
 .IndividualPoints{
     margin: 5px;
     border: 1px solid red;

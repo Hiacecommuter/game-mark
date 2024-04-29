@@ -17,7 +17,6 @@ function Game({onIsNewChange, numberOfPlayers, onSetNumberOfPlayersChange}){
         setPlayerNames(newPlayerNames);
       };
 
-
     return (
         
         <div className='Container'>

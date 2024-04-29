@@ -18,6 +18,13 @@ function Player({defaultName, onNameChange}){
         setPoint(0);
     }
 
+    const handleDeductButton = () => {
+        let negativePoint = 0-point;
+        setPointList([...pointList, negativePoint]);
+        setTotalPoints(totalPoints - point);
+        setPoint(0);
+    }
+
     return(
         <div className='PlayerContainer'>
             <input type='text' value={defaultName} onChange={(e)=>onNameChange(e.target.value)} className='PlayerName'/>
@@ -28,6 +35,8 @@ function Player({defaultName, onNameChange}){
             </div>
             <input type='number' value={point} onChange={handlePointInput} placeholder='Insert points' className='PointsInput'/>
             <button className='AddButton' onClick={handleAddButton}>Add</button>
+            <button className='DeductButton' onClick={handleDeductButton}>Deduct</button>
+
         </div>
     )
 }
