@@ -3,10 +3,10 @@ import './PlayerNumber.css'
 function PlayerNumber({onIsNewChange, numberOfPlayers, onSetNumberOfPlayersChange}){
 
     const handleConfirmButton = () =>{
-        if (numberOfPlayers>0 && numberOfPlayers<7)
+        if (numberOfPlayers>0 && numberOfPlayers <9)
         {onIsNewChange(false);}
         else{
-            alert("Please enter number of players between 1-6!")
+            alert("Please enter a valid number of players (1-8)!")
         }
     }
 
@@ -14,7 +14,7 @@ function PlayerNumber({onIsNewChange, numberOfPlayers, onSetNumberOfPlayersChang
             <div className='Container'>
                 <div className="WhiteBox">
                     <div className='InputRequest'>Enter number of players:</div>
-                    <input type='number' className='UserInput' placeholder='Enter number between 1-6' min="2" max="4" 
+                    <input type='number' className='UserInput' placeholder='Enter number between 1-8' min="2" max="4" 
                     value={numberOfPlayers} onChange={(e) => onSetNumberOfPlayersChange(e.target.value)}/>
                     <button className='Buttons' onClick={handleConfirmButton}>Confirm</button>
                 </div>
